@@ -81,7 +81,7 @@ if(0 < thisLayer.marker.numKeys){
 result;`
 
 
-  const getLocalizedText = function (str) {
+  const getLocalizedText = function (str): string {
     if (app.isoLanguage == "ja_JP") {
       return str.jp;
     } else {
@@ -89,7 +89,7 @@ result;`
     }
   }
 
-  const isCompActive = function (comp: CompItem) {
+  const isCompActive = function (comp: CompItem): boolean {
     if (!(comp && comp instanceof CompItem)) {
       return false;
     } else {
@@ -97,7 +97,7 @@ result;`
     }
   }
 
-  const isLayerSelected = function (layers: Layer[]) {
+  const isLayerSelected = function (layers: Layer[]): boolean {
     if (layers.length === 0) {
       return false;
     } else {
@@ -105,7 +105,7 @@ result;`
     }
   }
 
-  const main = function () {
+  const main = function (): number {
     const actComp: CompItem = <CompItem>app.project.activeItem;
     if (!isCompActive(actComp)) {
       return 0;
@@ -171,6 +171,8 @@ result;`
 
       telopLayers[i].property(ADBE_TEXT_PROPERTIES).property(ADBE_TEXT_DOCUMENT).expression = EXPRESSION_TEXT;
     }
+
+    return 0;
   }
 
   app.beginUndoGroup("Telop Text Importer");

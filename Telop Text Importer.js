@@ -139,6 +139,7 @@ result;
             }
             telopLayers[i].property(ADBE_TEXT_PROPERTIES).property(ADBE_TEXT_DOCUMENT).expression = EXPRESSION_TEXT;
         }
+        return 0;
     };
     app.beginUndoGroup("Telop Text Importer");
     main();
