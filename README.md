@@ -1,4 +1,4 @@
-﻿# Telop Text Importer
+# Telop Text Importer
 (C) あかつきみさき(みくちぃP)
 
 ## このスクリプトについて
