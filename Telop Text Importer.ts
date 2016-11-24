@@ -18,7 +18,7 @@
 
   const LOAD_SUPPORT_EXTENTION: string[] = ["All files:*.*", "Text files:*.txt"];
 
-  const EXPRESSION_TEXT = `// var result = text.sourceText;
+  const EXPRESSION_TEXT: string = `// var result = text.sourceText;
 var result = "";
 if(0 < thisLayer.marker.numKeys){
   var nearMarker = thisLayer.marker.nearestKey(time);
